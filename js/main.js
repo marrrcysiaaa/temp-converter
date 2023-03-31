@@ -47,6 +47,14 @@ const conversion = () => {
 		result.textContent = 'Musisz podać jakąś wartość'
 	}
 }
+
+const reset = () => {
+    converter.value = ""
+    result.textContent = ""
+}
+
+
 changeBtn.addEventListener('click', swap)
 convBtn.addEventListener('click', conversion)
+resetBtn.addEventListener("click", reset)
 // convBtn.addEventListener("click", fahrToCell)
